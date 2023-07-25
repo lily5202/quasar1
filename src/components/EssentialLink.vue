@@ -1,14 +1,6 @@
 <template>
-  <q-item
-    clickable
-    tag="a"
-    target="_blank"
-    :href="link"
-  >
-    <q-item-section
-      v-if="icon"
-      avatar
-    >
+  <q-item clickable active-class="text-pink-5" tag="a" :to="link">
+    <q-item-section v-if="icon" avatar>
       <q-icon :name="icon" />
     </q-item-section>
 
@@ -32,3 +24,10 @@ withDefaults(defineProps<EssentialLinkProps>(), {
   icon: '',
 });
 </script>
+
+<style scoped>
+.q-hoverable:hover {
+  color: rgb(89, 166, 254);
+  background-color: rgb(235, 241, 249);
+}
+</style>

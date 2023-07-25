@@ -59,14 +59,14 @@ module.exports = configure(function (ctx) {
         API: ctx.dev ? 'https://dev.api.com' : 'https://prod.api.com',
       },
 
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
+      vueRouterMode: 'history', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      publicPath: '/',
+      // publicPath: '/',
       // analyze: true,
       // env: {},
       // rawDefine: {}
